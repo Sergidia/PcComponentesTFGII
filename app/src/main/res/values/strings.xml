@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">PcComponentes</string>
+    <string name="user_hint">Usuario (email)</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="forgotPassword_hint">¿Has olvidado tu contraseña?</string>
+    <string name="passwordEdit_hint">Modificar contraseña</string>
+    <string name="passwordConfirm_hint">Confirmar contraseña</string>
+    <string name="signIn_text">Iniciar sesión</string>
+    <string name="register_text">Registrarse</string>
+    <string name="loginAdicionales_hint">Otras formas de inicio de sesión</string>
+    <string name="apply_text">Aplicar cambios</string>
+    <string name="deleteAccount_hint">¿Desea borrar su cuenta?</string>
+    <string name="redirectWeb">Abrir en navegador</string>
+
+    <string name="notif_push_text">Notificaciones móviles</string>
+    <string name="notif_email_text">Notificaciones por correo</string>
+
+    <string name="op_perfil">Mi Perfil</string>
+    <string name="op_sesion">Cerrar Sesión</string>
+    <string name="op_buscador">Buscador</string>
+
+    <string name="vistaPrincipal">Principal</string>
+    <string name="vistaSeguidos">Seguidos</string>
+
+    <!--
+        Esta variable se ha creado debido a un bug durante la compilación, por la que ciertos valores de google-services.json no son accesibles.
+        En este caso, la variable es default_web_client_id, necesaria para el inicio de sesión vía Google. Tras buscar en Internet muchas soluciones
+        a lo que parece un problema bastante habitual, se ha optado por llevar el valor a este xml para su lectura
+     -->
+    <string name="default_web_client_id_v2" translatable="true">710686798944-s7ivkbgop56ba6nsur8a88f9hjvgd3hl.apps.googleusercontent.com</string>
+
+    <!--
+        Login Facebook
+     -->
+    <string name="facebook_app_id">5327753617321158</string>
+    <string name="fb_login_protocol_scheme">fb5327753617321158</string>
+    <string name="facebook_client_token">03063a56ba48abf2e493923860524b71</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">TFG PCComponentes 2</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--
+        Navigation Drawer
+     -->
+    <string name="menu_home">Listado de componentes</string>
+    <string name="menu_seguidos">Listado de seguimiento</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="nombre_AZ">Ordenar por nombre A-Z</string>
+    <string name="nombre_ZA">Ordenar por nombre Z-A</string>
+    <string name="categoria_AZ">Ordenar por categoría A-Z</string>
+    <string name="categoria_ZA">Ordenar por categoría Z-A</string>
+    <string name="precio_mayor">Ordenar por precio mayor</string>
+    <string name="precio_menor">Ordenar por precio menor</string>
+    <string name="switch_buscar">Buscar por nombre/categoría</string>
+
+</resources>

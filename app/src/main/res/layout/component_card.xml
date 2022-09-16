@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/component_rounded_border"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/componentImage"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    tools:srcCompat="@tools:sample/avatars"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/componentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/componentImage"
+                    android:text="Nombre"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/componentCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/componentName"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/componentImage"
+                    android:text="Categoría"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/componentPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/componentCategory"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/componentImage"
+                    android:text="Precio"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

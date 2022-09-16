@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.Profile" >
+
+    <ImageView
+        android:id="@+id/pccomponentes"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/logopccomponentes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logopccomponentes"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/userText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pccomponentes"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="@string/passwordEdit_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userText"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/passwordConfirmText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="@string/passwordConfirm_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText"
+        tools:ignore="Autofill" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupNotif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:checkedButton="@id/notifPush"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordConfirmText">
+
+        <RadioButton
+            android:id="@+id/notifPush"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:text="@string/notif_push_text" />
+
+        <RadioButton
+            android:id="@+id/notifEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:text="@string/notif_email_text" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="@string/apply_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupNotif" />
+
+    <TextView
+        android:id="@+id/deleteAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/deleteAccount_hint"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applyButton" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "710686798944",
+    "firebase_url": "https://pccomponentes-tfg-ucm.firebaseio.com",
+    "project_id": "pccomponentes-tfg-ucm",
+    "storage_bucket": "pccomponentes-tfg-ucm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710686798944:android:f10d490aa141c188e0bf05",
+        "android_client_info": {
+          "package_name": "ucm.tfg.pccomponentes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710686798944-s7ivkbgop56ba6nsur8a88f9hjvgd3hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoiv5xjgo6Wuv8jf65bcS2f_5pZ5dFLWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710686798944-s7ivkbgop56ba6nsur8a88f9hjvgd3hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

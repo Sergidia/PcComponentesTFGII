@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainActivity"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/seguidosView"
+            android:icon="@drawable/ic_playlist_add_check_black_24dp"
+            android:title="@string/menu_seguidos" />
+
+        <!-- Por limitaciones de Firebase no se pueden hacer consultas
+            complejas en los listados de seguimiento, ya que un
+            documento en este listado sólo contiene un precio (de aviso)
+            y el nombre del documento es el id del componente, que servirá para hacer cruces con
+            el listado original (cuyos documentos para componente también tienen su id por nombre)
+
+            Así que no podemos filtrar por nombres ni precios (valor) porque los desconocemos inicialmente
+            antes de traerlos a un ArrayList, lo que provoca ineficiencias por el ordenado de elementos.
+
+            En cualquier caso, por el proyecto que se trata, se implementará un ordenado
+            del ArrayList para el listado de seguimiento -->
+
+        <item
+            android:id="@+id/nombreAZ"
+            android:title="@string/nombre_AZ" />
+        <item
+            android:id="@+id/nombreZA"
+            android:title="@string/nombre_ZA" />
+        <item
+            android:id="@+id/categoriaAZ"
+            android:title="@string/categoria_AZ" />
+        <item
+            android:id="@+id/categoriaZA"
+            android:title="@string/categoria_ZA" />
+        <item
+            android:id="@+id/precioMayor"
+            android:title="@string/precio_mayor" />
+        <item
+            android:id="@+id/precioMenor"
+            android:title="@string/precio_menor" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_baseline_manage_accounts_24"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/cerrarSesion"
+            android:title="@string/op_sesion" />
+    </group>
+</menu>

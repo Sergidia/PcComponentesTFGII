@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainActivity"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nombreAZ"
+            android:title="@string/nombre_AZ" />
+        <item
+            android:id="@+id/nombreZA"
+            android:title="@string/nombre_ZA" />
+        <item
+            android:id="@+id/categoriaAZ"
+            android:title="@string/categoria_AZ" />
+        <item
+            android:id="@+id/categoriaZA"
+            android:title="@string/categoria_ZA" />
+        <item
+            android:id="@+id/precioMayor"
+            android:title="@string/precio_mayor" />
+        <item
+            android:id="@+id/precioMenor"
+            android:title="@string/precio_menor" />
+
+        <item
+            android:id="@+id/seguidosView"
+            android:icon="@drawable/ic_playlist_add_check_black_24dp"
+            android:title="@string/menu_seguidos" />
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_baseline_manage_accounts_24"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/cerrarSesion"
+            android:title="@string/op_sesion" />
+    </group>
+</menu>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detalleComponente"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list.ComponenteView">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imagenComponente"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/nombreComponente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@id/imagenComponente"
+                    android:text="Nombre"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tipoComponente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nombreComponente"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/imagenComponente"
+                    android:text="Categoría"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/precioComponente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tipoComponente"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/imagenComponente"
+                    android:text="Precio"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNavDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="@string/redirectWeb"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxComponente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Producto seguido"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <EditText
+                android:id="@+id/precioNoti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:hint="precio aviso"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/checkBoxComponente"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button_rounded"
+            android:text="Actualizar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

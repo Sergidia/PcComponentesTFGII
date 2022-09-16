@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/principal"
+        android:title="@string/vistaPrincipal"
+        android:icon="@drawable/ic_list_black_24dp"/>
+    <item
+        android:id="@+id/seguidos"
+        android:title="@string/vistaSeguidos"
+        android:icon="@drawable/ic_playlist_add_check_black_24dp"/>
+</menu>
